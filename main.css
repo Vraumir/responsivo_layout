@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.container,
+.produtos,
+.menu-produtos {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+header {
+    padding: 12px 0;
+    background-color: #2C6BF3;
+    width: 100%;
+}
+
+header h1 {
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.container li {
+    list-style: none;
+    padding: 0 0 0 16px;
+    font-weight: bold;
+    font-size: 18px
+}
+
+.container li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sobre-a-loja {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    max-width: 1024px;
+    }
+
+.sobre-a-loja img {
+    max-width: 500px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.sobre-a-loja h2 {
+    padding-bottom: 20px;
+    font-style: italic;
+    color: #2C6BF3;
+    border-bottom: 2px solid #2C6BF3;
+}
+
+.sobre-a-loja p {
+    margin-top: 50px;
+}
+
+.produtos {
+    width: 1024px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-column-gap: 2%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-produtos {
+    margin-top: 100px;
+    color: #2C6BF3;
+    font-style: italic;
+    border-bottom: 2px solid #2C6BF3;
+    padding-bottom: 16px;
+}
+
+.produtos img {
+    margin: 5px;
+    height: 120px;
+    margin-bottom: 24px;
+    max-width: 100%;
+}
+
+.grid {
+    list-style: none;
+  }
+
+.produtos h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.produtos p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    color: #fff;
+    background-color: #2C6BF3;
+    width: 246px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #123683;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+
+.container,
+.produtos,
+.menu-produtos {
+    max-width: 641px;
+    text-align: center;
+}
+
+.menu-produtos {
+    margin-top: 20px;
+
+}
+
+.produtos {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2 50%);
+    justify-content: center;
+    align-items: center;
+}
+
+.produtos h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.sobre-a-loja {
+    display: block;
+    margin-top: 50px;
+    justify-content: center;
+    max-width: 641px;
+    text-align: center;
+    }
+
+.sobre-a-loja img {
+    margin-bottom: 20px;
+    max-width: 641px;
+    height: auto;
+}
+
+.sobre-a-loja p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+button {
+    margin-bottom: 30px;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .container,
+    .produtos,
+    .menu-produtos {
+        max-width: 300px;
+        text-align: center;
+    }
+
+    header .container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    header h1 {
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .menu-produtos {
+        margin-top: 20px;
+    
+    }
+    
+    .produtos {
+        text-align: center;
+        max-width: 300px;
+        text-align: center;
+        display: block;
+        align-items: center;
+    }
+    
+    .produtos h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .sobre-a-loja {
+        display: block;
+        margin-top: 50px;
+        justify-content: center;
+        max-width: 300px;
+        text-align: center;
+        }
+    
+    .sobre-a-loja img {
+        margin-bottom: 20px;
+        max-width: 300px;
+    }
+    
+    .sobre-a-loja p {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    
+    button {
+        margin-bottom: 30px;
+    }
+    
+    }
